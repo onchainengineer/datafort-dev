@@ -35,7 +35,7 @@ export default function AssetStats() {
           <span className={styles.number}>
             {formatNumber(asset.stats.allocated, locale, '0')}
           </span>{' '}
-          veOCEAN
+          veDataFort
         </span>
       ) : null}
       {!asset?.stats || asset?.stats?.orders < 0 ? (
@@ -52,7 +52,7 @@ export default function AssetStats() {
         <span className={styles.stat}>
           <span className={styles.number}>{ownAllocation}</span>% allocated
           <Tooltip
-            content={`You have ${ownAllocation}% of your total veOCEAN allocated to this asset.`}
+            content={`You have ${ownAllocation}% of your total veDataFort allocated to this asset.`}
           />
         </span>
       ) : null}

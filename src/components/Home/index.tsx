@@ -63,7 +63,7 @@ export default function HomePage(): ReactElement {
       <Allocations />
 
       <SectionQueryResult
-        title="Highest veOCEAN Allocations"
+        title="Highest veDataFort Allocations"
         query={queryMostAllocation}
       />
 

@@ -14,7 +14,7 @@ import {
 
 const AllLocked = gql`
   query AllLockedQuery {
-    veOCEANs(first: 1000) {
+    veDataForts(first: 1000) {
       lockedAmount
     }
   }
@@ -40,7 +40,7 @@ const NftOwnAllocation = gql`
 `
 const OceanLocked = gql`
   query OceanLockedQuery($address: ID!) {
-    veOCEAN(id: $address) {
+    veDataFort(id: $address) {
       id
       lockedAmount
       unlockTime
@@ -118,7 +118,7 @@ export async function getTotalAllocatedAndLocked(): Promise<TotalVe> {
     null,
     queryContext
   )
-  totals.totalLocked = fetchedLocked.data?.veOCEANs.reduce(
+  totals.totalLocked = fetchedLocked.data?.veDataForts.reduce(
     (previousValue, currentValue) =>
       previousValue + Number(currentValue.lockedAmount),
     0
@@ -141,8 +141,8 @@ export async function getLocked(
         queryContext
       )
 
-    fetchedLocked.data?.veOCEAN?.lockedAmount &&
-      (total += Number(fetchedLocked.data?.veOCEAN?.lockedAmount))
+    fetchedLocked.data?.veDataFort?.lockedAmount &&
+      (total += Number(fetchedLocked.data?.veDataFort?.lockedAmount))
   }
 
   return total

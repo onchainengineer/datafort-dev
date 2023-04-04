@@ -51,7 +51,7 @@ export function generateNftMetadata(): NftMetadata {
 
   const newNft: NftMetadata = {
     name: 'Ocean Data NFT',
-    symbol: 'OCEAN-NFT',
+    symbol: 'DataFort-NFT',
     description: `This NFT represents an asset in the Ocean Protocol v4 ecosystem.`,
     external_url: 'https://market.oceanprotocol.com',
     background_color: '141414', // dark background

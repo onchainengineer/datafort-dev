@@ -13,7 +13,7 @@ describe('@shared/Price', () => {
   it('renders fixed price', () => {
     render(
       <Price
-        price={{ value: 10, tokenSymbol: 'OCEAN', tokenAddress: '0x123' }}
+        price={{ value: 10, tokenSymbol: 'DataFort', tokenAddress: '0x123' }}
       />
     )
     expect(screen.getByText('10')).toBeInTheDocument()

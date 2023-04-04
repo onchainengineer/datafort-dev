@@ -8,7 +8,7 @@ jest.mock('../../../@utils/web3', () => ({ addTokenToWallet: jest.fn() }))
 describe('@shared/AddToken', () => {
   const propsBase = {
     address: '0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8',
-    symbol: 'OCEAN'
+    symbol: 'DataFort'
   }
   testRender(<AddToken {...propsBase} />)
 

@@ -77,7 +77,7 @@ export default function AssetTeaser({
               ) : (
                 <>
                   <strong>{formatNumber(allocated, locale, '0')}</strong>{' '}
-                  veOCEAN
+                  veDataFort
                 </>
               )}
             </span>

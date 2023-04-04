@@ -6,7 +6,7 @@ export default {
   approvedBaseTokens: [
     {
       address: '0xcfdda22c9837ae76e0faa845354f33c62e03653a',
-      symbol: 'OCEAN',
+      symbol: 'DataFort',
       name: 'Ocean Token',
       decimals: 18
     }

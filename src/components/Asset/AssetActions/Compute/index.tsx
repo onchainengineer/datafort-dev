@@ -91,7 +91,8 @@ export default function Compute({
   const [initializedProviderResponse, setInitializedProviderResponse] =
     useState<ProviderComputeInitializeResults>()
   const [providerFeeAmount, setProviderFeeAmount] = useState<string>('0')
-  const [providerFeesSymbol, setProviderFeesSymbol] = useState<string>('OCEAN')
+  const [providerFeesSymbol, setProviderFeesSymbol] =
+    useState<string>('DataFort')
   const [computeValidUntil, setComputeValidUntil] = useState<string>('0')
   const [datasetOrderPriceAndFees, setDatasetOrderPriceAndFees] =
     useState<OrderPriceAndFees>()
@@ -503,11 +504,13 @@ export default function Compute({
             hasDatatokenSelectedComputeAsset={hasAlgoAssetDatatoken}
             datasetSymbol={
               asset?.accessDetails?.baseToken?.symbol ||
-              (asset?.chainId === 137 ? 'mOCEAN' : 'OCEAN')
+              (asset?.chainId === 137 ? 'mDataFort' : 'DataFort')
             }
             algorithmSymbol={
               selectedAlgorithmAsset?.accessDetails?.baseToken?.symbol ||
-              (selectedAlgorithmAsset?.chainId === 137 ? 'mOCEAN' : 'OCEAN')
+              (selectedAlgorithmAsset?.chainId === 137
+                ? 'mDataFort'
+                : 'DataFort')
             }
             providerFeesSymbol={providerFeesSymbol}
             dtSymbolSelectedComputeAsset={

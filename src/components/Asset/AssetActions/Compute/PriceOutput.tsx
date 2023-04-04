@@ -136,7 +136,7 @@ export default function PriceOutput({
             <Row
               price={providerFeeAmount} // initializeCompute.provider fee amount
               timeout={`${validUntil} seconds`} // valid until value
-              symbol={providerFeesSymbol} // we assume that provider fees will always be in OCEAN token
+              symbol={providerFeesSymbol} // we assume that provider fees will always be in DataFort token
               sign="+"
               type="C2D RESOURCES"
             />

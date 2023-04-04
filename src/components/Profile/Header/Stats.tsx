@@ -79,18 +79,18 @@ export default function Stats({
               style="text"
               href="https://df.oceandao.org"
             >
-              Lock OCEAN
+              Lock DataFort
             </Button>
           ) : (
             <>
-              <PriceUnit price={lockedOcean} symbol="OCEAN" /> locked
+              <PriceUnit price={lockedOcean} symbol="DataFort" /> locked
             </>
           )
         }
         value={
           <Conversion
             price={lockedOcean > 0 ? lockedOcean : 0}
-            symbol="OCEAN"
+            symbol="DataFort"
             hideApproximateSymbol
           />
         }

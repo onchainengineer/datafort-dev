@@ -21,8 +21,8 @@ export default function Preview(): ReactElement {
         price: `${values.pricing.price}`,
         baseToken: {
           address: ZERO_ADDRESS,
-          name: values.pricing?.baseToken?.symbol || 'OCEAN',
-          symbol: values.pricing?.baseToken?.symbol || 'OCEAN'
+          name: values.pricing?.baseToken?.symbol || 'DataFort',
+          symbol: values.pricing?.baseToken?.symbol || 'DataFort'
         },
         datatoken: {
           address: ZERO_ADDRESS,
@@ -38,7 +38,7 @@ export default function Preview(): ReactElement {
         orders: null,
         price: {
           value: values.pricing.type === 'free' ? 0 : values.pricing.price,
-          tokenSymbol: values.pricing?.baseToken?.symbol || 'OCEAN',
+          tokenSymbol: values.pricing?.baseToken?.symbol || 'DataFort',
           tokenAddress: ZERO_ADDRESS
         }
       }

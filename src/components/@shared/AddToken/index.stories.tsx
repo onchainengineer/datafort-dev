@@ -18,12 +18,12 @@ interface Props {
 export const Default: Props = Template.bind({})
 Default.args = {
   address: '0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8',
-  symbol: 'OCEAN'
+  symbol: 'DataFort'
 }
 
 export const Minimal: Props = Template.bind({})
 Minimal.args = {
   address: '0xd8992Ed72C445c35Cb4A2be468568Ed1079357c8',
-  symbol: 'OCEAN',
+  symbol: 'DataFort',
   minimal: true
 }

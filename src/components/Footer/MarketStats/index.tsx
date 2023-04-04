@@ -127,14 +127,14 @@ export default function MarketStats(): ReactElement {
         <PriceUnit
           decimals="0"
           price={total.veLocked}
-          symbol="OCEAN"
+          symbol="DataFort"
           size="small"
         />{' '}
         locked.{' '}
         <PriceUnit
           decimals="0"
           price={total.veAllocated}
-          symbol="veOCEAN"
+          symbol="veDataFort"
           size="small"
         />{' '}
         allocated.

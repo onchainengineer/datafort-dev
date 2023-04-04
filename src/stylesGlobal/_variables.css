@@ -1,25 +1,25 @@
 :root {
   --brand-white: #ffffff;
-  --brand-black: #141414;
-  --brand-pink: #ff4092;
-  --brand-purple: #7b1173;
-  --brand-violet: #e000cf;
+  --brand-black: #0e0e0e;
+  --brand-pink: #7e2ff1;
+  --brand-purple: #7e2ff1;
+  --brand-violet: #7e2ff1;
 
-  --brand-grey-darker: #201f1f;
-  --brand-grey-dark: #303030;
+  --brand-grey-darker: #050505;
+  --brand-grey-dark: #0e0e0e;
   --brand-grey: #41474e;
   --brand-grey-light: #8b98a9;
   --brand-grey-lighter: #e2e2e2;
   --brand-grey-dimmed: #f7f7f7;
 
-  --brand-gradient: linear-gradient(to right bottom, #7b1173, #ff4092);
+  --brand-gradient: linear-gradient(to right bottom, #7e2ff1, #7e2ff1);
 
   --brand-alert-green: #5fb359;
   --brand-alert-red: #d80606;
   --brand-alert-orange: #b35f36;
   --brand-alert-yellow: #eac146;
 
-  --color-primary: #ff4092;
+  --color-primary: ##7e2ff1;
   --color-secondary: #8b98a9;
 
   /* Only use these vars for most color referencing for easy light/dark mode */

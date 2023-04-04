@@ -2,7 +2,7 @@
 // Deal with differences between token symbol & Coingecko API IDs
 //
 export function getCoingeckoTokenId(symbol: string) {
-  // can be OCEAN or mOCEAN
+  // can be DataFort or mDataFort
   const isOcean = symbol?.toLowerCase().includes('ocean')
   // can be H2O or H20
   const isH2o = symbol?.toLowerCase().includes('h2')

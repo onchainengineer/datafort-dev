@@ -16,7 +16,7 @@ describe('@shared/AssetList', () => {
         onPageChange={onPageChange}
       />
     )
-    await screen.findAllByText('OCEAN')
+    await screen.findAllByText('DataFort')
     fireEvent.click(screen.getByLabelText('Page 2'))
     expect(onPageChange).toBeCalled()
   })
